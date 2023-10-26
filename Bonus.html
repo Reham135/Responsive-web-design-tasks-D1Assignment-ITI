@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonus</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+        }
+        section {
+            rotate: 45deg;            
+            gap: 5px;
+            width: 50%;
+            height: 500px;
+            display: grid;
+            grid-template-areas:
+                "div1 div2 div2 "
+                "div1 div2 div2 "
+                "div1 div2 div2 "
+                "div1 div3 div4 "
+                "div1 div3 div4 "
+                "div1 div3 div4 "
+                "div5 div5 div4 "
+                "div5 div5 div4 "
+                "div5 div5 div4 ";
+        }
+        .div1 {
+            background-color: yellow;
+            grid-area: div1;
+        }
+        .div2 {
+            background-color: orangered;
+            grid-area: div2;
+        }
+        .div3 {
+            background-color: green;
+            grid-area: div3;
+        }
+        .div4 {
+            background-color: brown;
+            grid-area: div4;
+        }
+        .div5 {
+            background-color: aqua;
+            grid-area: div5;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+        <div class="div5">5</div>
+
+    </section>
+</body>
+
+</html>

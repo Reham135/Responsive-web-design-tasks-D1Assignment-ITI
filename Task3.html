@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>grid</title>
+  <style>
+    section {
+      height: 200px;
+      width: 100%;
+      display: grid;
+      text-align: center;
+      grid-template-areas:
+        "head head head head"
+        "sideNav main main sidebar"
+        "sideNav main main sidebar"
+        "sideNav main main sidebar"
+        "sideNav main main sidebar"
+        "foot foot foot foot ";
+    }
+
+    header {
+      border: 2px solid white;
+      background-color: blue;
+      grid-area: head;
+    }
+
+    aside {
+      border: 2px solid white;
+      background-color: orangered;
+      grid-area: sideNav;
+    }
+
+    main {
+      border: 2px solid white;
+      background-color: green;
+      grid-area: main;
+    }
+
+    .sidebar {
+      border: 2px solid white;
+      grid-area: sidebar;
+      background-color: orangered;
+    }
+
+    footer {
+      border: 2px solid white;
+      background-color: blue;
+      grid-area: foot;
+    }
+
+    @media(max-width:500px) {
+      section {
+
+        grid-template-areas: "head head head head"
+          "sideNav sideNav sideNav sideNav"
+          "main main main main"
+          "main main main main"
+          "sidebar sidebar sidebar sidebar"
+          "foot foot foot foot ";
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <section>
+    <header>header</header>
+    <aside>SideNav</aside>
+    <main>main Content</main>
+    <aside class="sidebar">SideBar</aside>
+    <footer>footer</footer>
+  </section>
+</body>
+
+</html>
